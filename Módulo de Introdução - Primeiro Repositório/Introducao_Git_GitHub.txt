@@ -1,0 +1,55 @@
+comandos para o cmd do windows:
+dir		- lista as pastas
+cd		- permite entrar em pastas
+		... / - Retorna para a base
+		... (nome do diretório) - Entra no diretório
+		... .. - Retorna um nível de navegação
+cls		- Limpa tela
+mkdir	- cria uma pasta (silence for sucess)
+echo		- Repete o que eu escrevo no terminal
+		... > - ">" é um redirecionador de fluxo, permite que eu jogue esse texto em um arquivo
+		... | - um "pipe", "cospe" o output para algo (?)
+del		- deleta o conteúdo de um repositório
+rmdir	- remove o repositório (em teoria)
+		.../S /Q - uso de flags, remove efetivamente o repositório
+botão tab - autocompletar
+botão setinha pra cima/baixo - mostra o historico de comandos digitados	
+
+comandos para o cmd do linux:
+ls	- lista as pastas (flag -a mostra arquivos ocultos))
+cd	- permite entrar em pastas
+	... / - Retorna para a base
+	... (nome do diretório) - Entra no diretório
+	... .. - Retorna um nível de navegação
+clr	- Limpa tela (out ctrl + l) 
+mkdir	- cria uma pasta (silence for sucess)
+echo		- Repete o que eu escrevo no terminal
+		... > - ">" é um redirecionador de fluxo, permite que eu jogue esse texto em um arquivo
+sudo		- Permissão de superusuario
+rm		- deleta arquivos/diretorios
+		... -rf - recursividade forçada, apaga pastas e arquivos internos sem exibir pedido de confirmação
+mv		- move arquivos/pastas (./... - começo de um caminho a partir da mesma pasta)
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+Blob - Objeto interno do git que guarda metadados do arquivo : (tipo blob, tamanho da do arquivo, caractere nulo e o arquivo)
+Tree - Armazena blobs, contém metadados e caractere nulo, aponta para um blob ou outras "Tree"s, tem metadados da Tree, mexer nos objetos de dentro, muda o SHA1 da Tree
+Commit - Aponta para Tree, parente (commit anterior a ele), autor, mensagem (pra dar sentido, explicando alterações) e timestamp (carimbo de tempo). Possui tamanho
+
+-------------------------------------------------------------------------------------------------------------------
+
+Chave SSH - Forma de estabelecer conexão segura e encriptada entre duas máquinas. Configurar máquina local como confiável ao GitHub. Gera chave pública e privada
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+Comandos GIT 
+git init		- Inicia repositório, cria um .git.
+			- Tracked pra arquivos nos quais o git conhece - através do add - (Unmodified, Modified, Staged)
+			
+git add		- mover arquivos e conhecer primeiros comandos
+git commit	- criar commit (flag -m)
+git clone		- clona repositório
